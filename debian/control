@@ -1,0 +1,20 @@
+Source: seetaface-quality-assessor
+Section: devel
+Priority: optional
+Maintainer: bd <bd@seetatech.com>
+Build-Depends: debhelper (>= 11),
+ libopencv-dev,
+ cmake,
+ seetaface-open-role-zoo,
+ seetaface-tennis,
+ seetaface-pose-estimation,
+ seetaface-authorize
+Standards-Version: 4.5.1
+Homepage: https://github.com/TenniS-Open/TenniS.git
+Rules-Requires-Root: no
+
+Package: seetaface-quality-assessor
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Qualityassessor3 for deepin
+ Qualityassessor3 for deepin to using.
