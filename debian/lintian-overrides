@@ -1,0 +1,2 @@
+seetaface-quality-assessor: package-must-activate-ldconfig-trigger usr/lib/libSeetaQualityAssessor300.so
+seetaface-quality-assessor: shlib-without-PT_GNU_STACK-section usr/lib/libSeetaQualityAssessor300.so
