@@ -1,0 +1,41 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -8,7 +8,7 @@
+ list(APPEND CMAKE_MODULE_PATH ${SOLUTION_DIR}/cmake)
+ 
+ # install dir
+-set(CMAKE_INSTALL_PREFIX ${SOLUTION_DIR}/../build CACHE STRING "set install prefix" FORCE)
++#set(CMAKE_INSTALL_PREFIX ${SOLUTION_DIR}/../build CACHE STRING "set install prefix" FORCE)
+ 
+ # set base flags
+ set(CMAKE_CFLAGS "${CMAKE_C_FLAGS} -fvisibility=hidden -Wall")
+@@ -17,7 +17,7 @@
+ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
+ 
+ # option for platform
+-set(PLATFORM "x64" CACHE STRING "auto, x86 or x64")
++set(PLATFORM "auto" CACHE STRING "auto, x86 or x64")
+ set(CONFIGURATION "Debug" CACHE STRING "Debug or Release")
+ set(CONFIGURATION "${CMAKE_BUILD_TYPE}")
+ 
+--- a/QualityAssessor/CMakeLists.txt
++++ b/QualityAssessor/CMakeLists.txt
+@@ -62,15 +62,15 @@
+ endif()
+ 
+ if(SEETA_MODEL_ENCRYPT)
+-	find_package(SeetaAuthorize REQUIRED)
++	#find_package(SeetaAuthorize REQUIRED)
+ 	include_directories(${SeetaAuthorize_INCLUDE_DIRS})
+ 	target_link_libraries(${PROJECT_NAME}_SHARED ${SeetaAuthorize_LIBRARIES})
+ endif()
+ 
+ # link ORZ
+-target_link_libraries(${PROJECT_NAME}_SHARED ORZ_static${ENV_SUFFIX})
++target_link_libraries(${PROJECT_NAME}_SHARED ORZ_static)
+ 
+-find_package(SeetaPoseEstimation REQUIRED)
++#find_package(SeetaPoseEstimation REQUIRED)
+ include_directories(${SeetaPoseEstimation_INCLUDE_DIRS})
+ target_link_libraries(${PROJECT_NAME}_SHARED ${SeetaPoseEstimation_LIBRARIES})
+ 

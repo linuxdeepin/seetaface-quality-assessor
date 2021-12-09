@@ -1,3 +1,9 @@
+seetaface-quality-assessor (1.0.0.1-1+dde) unstable; urgency=medium
+
+  * Fix build issue
+
+ -- chenlinxuan <chenlinxuan@uniontech.com>  Thu, 09 Dec 2021 22:12:38 +0800
+
 seetaface-quality-assessor (1.0.0-1) unstable; urgency=medium
 
   * Initial release 
