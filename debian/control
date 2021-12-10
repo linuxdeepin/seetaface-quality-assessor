@@ -8,6 +8,7 @@ Build-Depends: debhelper (>= 11),
  seetaface-open-role-zoo,
  seetaface-tennis,
  seetaface-pose-estimation,
+ seetaface-boxes,
  seetaface-authorize
 Standards-Version: 4.5.1
 Homepage: https://github.com/TenniS-Open/TenniS.git
